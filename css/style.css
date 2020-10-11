@@ -17,11 +17,14 @@ nav {
 	height: 80px;
 }
 
-body 
+body
 {
-	background: #A9A9A9;
-	font: 30px montserrat;
+	background-color: cornflowerblue;
+	font: Montserrat;
 }
+
+
+
 ul {
   list-style-type: none;
   margin: 0;
