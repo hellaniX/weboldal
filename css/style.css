@@ -19,8 +19,8 @@ nav {
 
 body 
 {
-	/*background: url('../images/background2.jpg') aqua repeat fixed;
-	font: 30px montserrat;*/
+	background: #A9A9A9;
+	font: 30px montserrat;
 }
 ul {
   list-style-type: none;
