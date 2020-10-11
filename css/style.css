@@ -1,5 +1,11 @@
+html
+{
+	height: 100%;
+}
+
+
 body 
 {
-	background: url('../images/background2.jpg') aqua;
-	font-family: Arial;
+	background: url('../images/background2.jpg') aqua repeat fixed;
+	font: 20px/50px arial;
 }
