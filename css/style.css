@@ -1,17 +1,48 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ul{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	
+
+
+
+
 	box-sizing: border-box;
 }
 
-
-
-html
-{
-	height: 100%;
+nav {
+	background: blue;
+	height: 80px;
 }
-
 
 body 
 {
-	background: url('../images/background2.jpg') aqua repeat fixed;
-	font: 20px/50px arial;
+	/*background: url('../images/background2.jpg') aqua repeat fixed;
+	font: 30px montserrat;*/
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: #111;
+  }
