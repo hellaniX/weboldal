@@ -3,9 +3,10 @@ p1
     font-size: 20px;
     border: 3px solid #fff;
     position: absolute;
-    top: 30%;
-    left: 200px;
-    padding: 25px;
-
-
+    padding: 8px;
+    position: absolute;
+    text-align: center;
+    top: 42%;
+    left: 550px;
+  
 }
