@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Character Generation</title>
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=XqsMadC8B1jTbV4QKh2ny89WLot5zz_La1WrSZjmbI751G4sQY75htabhgHv-jsyG-EvLTR8q_C5rzgxryJ8HumZP_Mhm_pLmCoxvwnCJ_UvhEOh4dMNFmcZB4Gtr3dZE0zuyu9KDHf-7xfS1kP7kA" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvNzU2OTY2MTQ0MTUzMjIzMzc4Lzc3NjgxMDY1ODU1MzUyODM1MC9jaGFyYWN0ZXJHZW4uaHRtbA"/></head>
+<style type="text/css">
+#generation
+{
+width: 700px;
+font-family: arial;
+font-size: 27px;
+background-color: rgba(88,88,88,1.0);	
+}
+
+table
+{
+	border: 1px solid black;
+}
+
+tr td:nth-child(2)
+{
+padding-top: 7px;	
+}
+
+#strengthSlider, #dexteritySlider, #perceptionSlider, #intelligenceSlider, #handsomeSlider
+{
+  appearance: none;
+  width: 500px;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+#strengthSlider::-webkit-slider-thumb, #dexteritySlider::-webkit-slider-thumb, #perceptionSlider::-webkit-slider-thumb, #intelligenceSlider::-webkit-slider-thumb, #handsomeSlider::-webkit-slider-thumb 
+{
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #882222;
+  cursor: pointer;
+}
+
+#strengthValue, #dexterityValue, #perceptionValue, #intelligenceValue, #handsomeValue
+{
+width:30px;
+height: 19px;
+font-size: 23px;
+}
+
+
+
+
+</style>
+<body>
+<div id="generation">
+<h1>Character generation</h1>	
+<table>
+ <tr>
+  <td>Strength</td>
+  <td><input type="range" min="1" max="100" value="50" id="strengthSlider"></td>
+  <td><input type="text" id="strengthValue" disabled="disabled"></td>	
+ </tr>
+ <tr>
+  <td>Dexterity</td>
+  <td><input type="range" min="1" max="100" value="50" id="dexteritySlider"></td>
+  <td><input type="text" id="dexterityValue" disabled="disabled"></td>	
+ </tr>
+ <tr>
+  <td>Perception</td>
+  <td><input type="range" min="1" max="100" value="50" id="perceptionSlider"></td>
+  <td><input type="text" id="perceptionValue" disabled="disabled"></td>  
+ </tr>
+ <tr>
+  <td>Intelligence</td>
+  <td><input type="range" min="1" max="100" value="50" id="intelligenceSlider"></td>
+  <td><input type="text" id="intelligenceValue" disabled="disabled"></td>  
+ </tr>
+ <tr>
+  <td>Handsome</td>
+  <td><input type="range" min="1" max="100" value="50" id="handsomeSlider"></td>
+  <td><input type="text" id="handsomeValue" disabled="disabled"></td>  
+ </tr>
+ 
+
+</table>
+</div>
+
+
+<script type="text/javascript">
+strengthValue.value = strengthSlider.value;
+dexterityValue.value = dexteritySlider.value;
+perceptionValue.value = perceptionSlider.value;
+intelligenceValue.value = intelligenceSlider.value;
+handsomeValue.value = handsomeSlider.value;
+
+
+strengthSlider.oninput = function()
+{
+  strengthValue.value = this.value;
+}
+
+dexteritySlider.oninput = function()
+{
+  dexterityValue.value = this.value;
+}
+
+perceptionSlider.oninput = function()
+{
+  perceptionValue.value = this.value;
+}
+
+intelligenceSlider.oninput = function()
+{
+  intelligenceValue.value = this.value;
+}
+
+handsomeSlider.oninput = function()
+{
+  handsomeValue.value = this.value;
+}
+
+
+</script>
+</body>
+</html>
